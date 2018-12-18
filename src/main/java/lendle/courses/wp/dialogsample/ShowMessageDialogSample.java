@@ -5,6 +5,8 @@
  */
 package lendle.courses.wp.dialogsample;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author lendle
@@ -38,25 +40,85 @@ public class ShowMessageDialogSample extends javax.swing.JFrame {
         getContentPane().setLayout(new java.awt.GridLayout(6, 1));
 
         jButton1.setText("Default");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                defaultActionPerformed(evt);
+            }
+        });
         getContentPane().add(jButton1);
 
         jButton2.setText("Error");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                errorActionPerformed(evt);
+            }
+        });
         getContentPane().add(jButton2);
 
         jButton3.setText("Information");
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                informationActionPerformed(evt);
+            }
+        });
         getContentPane().add(jButton3);
 
         jButton4.setText("Plain");
+        jButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                plainActionPerformed(evt);
+            }
+        });
         getContentPane().add(jButton4);
 
         jButton5.setText("Question");
+        jButton5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                questionActionPerformed(evt);
+            }
+        });
         getContentPane().add(jButton5);
 
         jButton6.setText("Warning");
+        jButton6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                warningActionPerformed(evt);
+            }
+        });
         getContentPane().add(jButton6);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void defaultActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_defaultActionPerformed
+        // TODO add your handling code here:
+        JOptionPane.showMessageDialog(this, "hello","",JOptionPane.DEFAULT_OPTION);
+    }//GEN-LAST:event_defaultActionPerformed
+
+    private void errorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_errorActionPerformed
+        // TODO add your handling code here:
+        JOptionPane.showMessageDialog(this, "hello","",JOptionPane.ERROR_MESSAGE);
+    }//GEN-LAST:event_errorActionPerformed
+
+    private void informationActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_informationActionPerformed
+        // TODO add your handling code here:
+        JOptionPane.showMessageDialog(this, "hello","",JOptionPane.INFORMATION_MESSAGE);
+    }//GEN-LAST:event_informationActionPerformed
+
+    private void plainActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_plainActionPerformed
+        // TODO add your handling code here:
+        JOptionPane.showMessageDialog(this, "hello","",JOptionPane.PLAIN_MESSAGE);
+    }//GEN-LAST:event_plainActionPerformed
+
+    private void questionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_questionActionPerformed
+        // TODO add your handling code here:
+        JOptionPane.showMessageDialog(this, "hello","",JOptionPane.QUESTION_MESSAGE);
+    }//GEN-LAST:event_questionActionPerformed
+
+    private void warningActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_warningActionPerformed
+        // TODO add your handling code here:
+        JOptionPane.showMessageDialog(this, "hello","",JOptionPane.WARNING_MESSAGE);
+    }//GEN-LAST:event_warningActionPerformed
 
     /**
      * @param args the command line arguments

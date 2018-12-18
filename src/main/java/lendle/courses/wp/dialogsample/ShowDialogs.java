@@ -87,7 +87,7 @@ public class ShowDialogs extends javax.swing.JFrame {
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
         //Launch SampleDialog1 in non-modal form
-         SampleDialog1 dlg=new SampleDialog1(this);
+        SampleDialog1 dlg=new SampleDialog1(this);
         dlg.setLocationRelativeTo(this);
         dlg.setModal(false);
         dlg.setVisible(true);
